@@ -1,0 +1,9 @@
+.DS_Store
+.netrwhist
+vim/autoload/*
+vim/backup/*
+vim/packages/*
+vim/swp/*
+notes/
+profile.d/*
+!.gitkeep
