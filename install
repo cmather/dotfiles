@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# creates a symlink, backing up any existing file
 link() {
   sourcePath=$1;
   symlinkPath=$2;
@@ -11,11 +12,16 @@ link() {
   ln -s "$sourcePath" "$symlinkPath"
 }
 
+# creates symlinks to dotfiles
 link profile $HOME/.profile
 link profile.d $HOME/.profile.d
 link tmux.conf $HOME/.tmux.conf
 link vim $HOME/.vim
 link vimrc $HOME/.vimrc
 
+# installs vim plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall
+
+# installs ycm languages
+(cd $HOME/.vim/packages/YouCompleteMe && ./install.py --all)
