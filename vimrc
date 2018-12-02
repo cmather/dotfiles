@@ -63,11 +63,12 @@ set title
 set ttyfast
 set ttymouse=xterm2
 set updatetime=50
+set t_Co=256
 
 " Options
 syntax on
 filetype indent plugin on
-colorscheme molokai
+colorscheme monokain
 
 " Variables
 let g:go_list_type = 'quickfix'
@@ -85,11 +86,11 @@ let g:ycm_key_list_select_completion = ['<c-j>']
 let g:ycm_key_list_previous_completion = ['<c-k>']
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-let g:go_highlight_types = 0
-let g:go_highlight_fields = 0
-let g:go_highlight_functions = 0
-let g:go_highlight_function_calls = 0
-let g:go_highlight_operators = 0
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 0
 
