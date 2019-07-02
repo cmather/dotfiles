@@ -1,5 +1,5 @@
 [user]
-	email = chris@eventedmind.com
+	email = chris@elements.dev
 	name = Chris Mather
 [alias]
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
