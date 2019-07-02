@@ -5,5 +5,5 @@ vim/backup/*
 vim/packages/*
 vim/swp/*
 notes/
-profile.d/*
 !.gitkeep
+profile.d/functions.sh
