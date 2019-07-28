@@ -7,6 +7,7 @@ import() {
 }
 
 ## Imports
+import $HOME/.profile.d/private.sh
 import $HOME/.profile.d/variables.sh
 import $HOME/.profile.d/aliases.sh
 import $HOME/.profile.d/colors.sh

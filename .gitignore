@@ -7,3 +7,4 @@ vim/swp/*
 notes/
 !.gitkeep
 profile.d/functions.sh
+private.sh
